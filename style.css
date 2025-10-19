@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+}
+
+#rst{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 13px;
+    background-color: rgb(14, 195, 231);
+    border: 2px  solid black;
+}
+#newgame{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 13px;
+    background-color: rgb(14, 195, 231);
+    border: 2px  solid black;
+
+}
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 20vmin;
+}
+.hide{
+    display: none;
+}
+
+
+
+#mode{
+    float: right;
+    background-color: aqua;
+    margin :10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px;
+}
+.dark {
+    background-color: #1B1B3A;  /* deep navy background */
+    color: #FFD699;             /* light gold text */
+}
+
+.light {
+    background-color: #FFF5E1;  /* soft cream background */
+    color: #1B1B3A;             /* dark blue text */
+}
+
+body.light #msg {
+    color: #1B1B3A;  /* dark text for contrast */
+}
+
+/* Dark mode */
+body.dark #msg {
+    color: #FFD699;  /* gold text for contrast */
+}
